@@ -516,7 +516,7 @@ nav ul {
 /*メインコンテンツ
 -------------------------------------*/
 main {
-    margin: 5rem 0 0 0;
+    margin: 5rem 1rem;
 }
 section {
 	margin: 5rem 0;
@@ -529,11 +529,15 @@ section {
 /*キャッチコピー
 -------------------------------------*/
 .catch {
-    text-align: center;
+    text-align: left;
+    p {
+      font-weight:600;font-size:1.5em;padding-bottom: 2rem;
+    }
 }
-.catch h2 {
-    padding-bottom: 1rem;
+.catch h1 {
+    padding-bottom: 3rem;font-weight: 600;
 }
+
 .under {
     border-bottom: 0.4rem solid var(--base-color);
     padding:0 1rem 1rem 1rem;
