@@ -1,18 +1,4 @@
-/*!
- * ress.css • v1.2.2
- * MIT License
- * github.com/filipelinhares/ress
- */html{box-sizing:border-box;overflow-y:scroll;-webkit-text-size-adjust:100%}*,:after,:before{background-repeat:no-repeat;box-sizing:inherit}:after,:before{text-decoration:inherit;vertical-align:inherit}*{padding:0;margin:0}audio:not([controls]){display:none;height:0}hr{overflow:visible}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}summary{display:list-item}small{font-size:80%}[hidden],template{display:none}abbr[title]{border-bottom:1px dotted;text-decoration:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace,monospace}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}input{border-radius:0}[role=button],[type=button],[type=reset],[type=submit],button{cursor:pointer}[disabled]{cursor:default}[type=number]{width:auto}[type=search]{-webkit-appearance:textfield}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit}optgroup{font-weight:700}button{overflow:visible}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:0;padding:0}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button:-moz-focusring{outline:1px dotted ButtonText}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}button,select{text-transform:none}button,input,select,textarea{background-color:transparent;border-style:none;color:inherit}select{-moz-appearance:none;-webkit-appearance:none}select::-ms-expand{display:none}select::-ms-value{color:currentColor}legend{border:0;color:inherit;display:table;max-width:100%;white-space:normal}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}img{border-style:none}progress{vertical-align:baseline}svg:not(:root){overflow:hidden}audio,canvas,progress,video{display:inline-block}@media screen{[hidden~=screen]{display:inherit}[hidden~=screen]:not(:active):not(:focus):not(:target){position:absolute!important;clip:rect(0 0 0 0)!important}}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled]{cursor:default}::-moz-selection{background-color:#b3d4fc;color:#000;text-shadow:none}::selection{background-color:#b3d4fc;color:#000;text-shadow:none}
 
- /*
- * grid
- * version:v1.0
- * Developer:popodesign
- * URL:https://popo-design.net
- */
-
-/* 全体の設定
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 html {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -21,142 +7,49 @@ html {
 }
 
 body {
-    color: #000;
-    font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
-    background:#fff;
+    color:#3F3F3F;
+    font-family: "Poppins", sans-serif;
+    background:#F2F2F2;
+    font-style: normal;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.6;
     margin:0;
 	padding:0;
 }
-
-/* グリッド
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 2.0rem;
-    position: relative;
+.poppins-semibold {
+  color:#3F3F3F;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 48px;
 }
-/* ブロックを縦に表示 */
-.row {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    width: 100%;
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
 }
-
-.col {
-    display: block;
-    flex: 1 1 auto;
-    margin-left: 0;
-    max-width: 100%;
-    width: 100%;
+.article-center {
+  text-align: center;line-height: 2rem;
 }
-/* 768px以上の表示 */
-@media ( min-width : 768px ) {
-.row {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-}
-.col {
-    margin-left: 4%;
-}
-	
-.col:first-child { 
-    margin-left: 0; 
-}
-
-.row .col.span-1 {
-    flex: 0 0 4.66666666667%;
-    max-width: 4.66666666667%;
-}
-.row .col.span-2 {
-    flex: 0 0 13.3333333333%;
-    max-width: 13.3333333333%;
-}
-.row .col.span-3 {
-    flex: 0 0 22%;
-    max-width: 22%;
-}
-.row .col.span-4 {
-    flex: 0 0 30.6666666667%;
-    max-width: 30.6666666667%;
-}
-.row .col.span-5 {
-    flex: 0 0 39.3333333333%;
-    max-width: 39.3333333333%;
-}
-.row .col.span-6 {
-    flex: 0 0 48%;
-    max-width: 48%;
-}
-.row .col.span-7 {
-    flex: 0 0 56.6666666667%;
-    max-width: 56.6666666667%;
-}
-.row .col.span-8 {
-    flex: 0 0 65.3333333333%;
-    max-width: 65.3333333333%;
-}
-.row .col.span-9 {
-    flex: 0 0 74.0%;
-    max-width: 74.0%;
-}
-.row .col.span-10 {
-    flex: 0 0 82.6666666667%;
-    max-width: 82.6666666667%;
-}
-.row .col.span-11 {
-    flex: 0 0 91.3333333333%;
-    max-width: 91.3333333333%;
-}
-.row .col.span-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-/* オフセット */
-.row .col.offset-1 {
-    margin-left: 8.66666666667%;
-}
-.row .col.offset-2 {
-    margin-left: 17.3333333333%;
-}
-.row .col.offset-3 {
-    margin-left: 26%;
-}
-.row .col.offset-4 {
-    margin-left: 34.6666666667%;
-}
-.row .col.offset-5 {
-    margin-left: 43.333333333%;
-}
-.row .col.offset-6 {
-    margin-left: 52%;
-}
-.row .col.offset-7 {
-    margin-left: 60.6666666667%;
-}
-.row .col.offset-8 {
-    margin-left: 69.3333333333%;
-}
-.row .col.offset-9 {
-    margin-left: 78.0%;
-}
-.row .col.offset-10 {
-    margin-left: 86.6666666667%;
-}
-.row .col.offset-11 {
-    margin-left: 95.3333333333%;
-}    
+#company-info {
+  table {
+    width:90%;margin:0 auto;
+    font-size:14px;
+  }
+  h4 {
+    margin-bottom:0;
+  }
+  p {
+    margin-bottom:0;
+  }
+  a{
+    margin-top:1rem;text-decoration: underline;
+  }
 }
 
 
-/* 見出し
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -169,165 +62,6 @@ h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
 h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
-/* PC表示 */
-@media (min-width: 550px) {
-  h1 { font-size: 3.0rem; }
-  h2 { font-size: 2.8rem; }
-  h3 { font-size: 2.5rem; }
-  h4 { font-size: 2.0rem; }
-  h5 { font-size: 1.8rem; }
-  h6 { font-size: 1.5rem; }
-}
-
-p {
-  margin-top: 0; }
-
-
-/* リンク
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
-  color: #0080ff; }
-a:hover {
-  color: #0FA0CE; }
-
-
-/* ボタン
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: #555;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 38px;
-  letter-spacing: .1rem;
-  text-transform: none;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 1px solid #bbb;
-  cursor: pointer;
-  box-sizing: border-box; }
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-.button:focus,
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
-  outline: 0; }
-
-
-/* フォーム
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-textarea,
-select {
-  height: 38px;
-  padding: 6px 10px;
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
-  box-shadow: none;
-  box-sizing: border-box;
-  font-size: 16px;}
-
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-textarea {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none; }
-textarea {
-  min-height: 150px;
-  padding-top: 6px;
-  padding-bottom: 6px; }
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="text"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-textarea:focus,
-select:focus {
-  border: 1px solid #0FA0CE;
-  outline: 0; }
-label,
-legend {
-  display: block;
-  margin-bottom: .5rem;
-  font-weight: 500; }
-fieldset {
-  padding: 0;
-  border-width: 0; }
-input[type="checkbox"],
-input[type="radio"] {
-  display: inline; }
-label > .label-body {
-  display: inline-block;
-  margin-left: .5rem;
-  font-weight: normal; }
-
-
-/* リスト
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul {
-  list-style: circle inside; }
-ol {
-  list-style: decimal inside; }
-ol, ul {
-  padding-left: 0;
-  margin-top: 0; }
-ul ul,
-ul ol,
-ol ol,
-ol ul {
-  margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 90%; }
-li {
-  margin-bottom: 1rem; }
-
-
-/* コード
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-code {
-  padding: .2rem .5rem;
-  margin: 0 .2rem;
-  font-size: 90%;
-  white-space: nowrap;
-  background: #F1F1F1;
-  border: 1px solid #E1E1E1;
-  border-radius: 4px; }
-pre > code {
-  display: block;
-  padding: 1rem 1.5rem;
-  white-space: pre; }
-
-
-/* テーブル
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 table {
 	border-collapse: collapse; }
 th,
@@ -342,67 +76,6 @@ th:last-child,
 td:last-child {
   padding-right: 0; }
 
-
-/* スペース
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-button,
-.button {
-  margin-bottom: 1rem; }
-input,
-textarea,
-select,
-fieldset {
-  margin-bottom: 1.5rem; }
-pre,
-blockquote,
-dl,
-figure,
-table,
-p,
-ul,
-ol,
-form {
-  margin-bottom: 1rem; }
-
-
-/* 全幅
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.full-width {
-  width: 100%;
-  box-sizing: border-box; }
-.max-full-width {
-  max-width: 100%;
-  box-sizing: border-box; }
-.pull-right {
-  float: right; }
-.pull-left {
-  float: left; }
-
-
-/* 罫線
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
-  border-top: 1px solid #E1E1E1; 
-}
-
-
-
-:root { /* 色変更される場合は、#以降のカラーコードを変更してください IE非対応 */
-    --base-color: #000;
-    --link-color: #666;
-    --linkhover-color: #999;
-    --back-color: #f7f7f7;
-    --border-color: #ccc;
-    --white-color: #fff;
-}
-
-img {
-	max-width:100%;
-	height: auto;/*高さ自動*/
-}
 a {
     display:block;
     color: var(--link-color);
@@ -412,122 +85,13 @@ a:hover {
     color: var(--linkhover-color);
 }
 
-/*ヘッダー
--------------------------------------*/
-.header {
-	display: flex;
-    flex-direction: row;
-    padding: 2rem 0 0 0;
-}
-.header-box {
-	margin-left: auto;
-	margin-top: 8px;
-}
-.contact-button {
-	padding: 1rem;
-	border: 2px solid var(--base-color);
-}
-nav ul {
-	display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
-	margin: 1rem 0 0 0;
-}
-nav li {
-	flex: 1 0 auto;
-}
-nav li a {
-    text-decoration: none;
-    text-align: center;
-    width: 100%;
-}
-nav a:hover {
-    background-color: var(--back-color);   
-}
-nav a {
-    padding: 0.5rem;
-}
-
-@media screen and (min-width: 768px){
-/* PC時はMENUボタンを非表示 */
-#open,#close {
-    display: none !important;
-}
-
-#navi {
-    display: block !important;
-}
-}
-
-@media screen and (max-width: 768px){
-.header {
-	flex-direction: column;
-    margin-bottom: 10px;
-}
-.header #open,#close  {
-    position: absolute;
-    top: 20px;
-    right: 12px;
-}
-nav ul {
-	flex-direction: column;
-}
-.header li {
-	padding-top: 0;
-}
-/* スマホ時はMENUボタンを表示 */
-#open {
-    display: block;
-    background: url(../assets/button.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 50px;
-    height: 50px;
-    border: none;
-    position: absolute;
-    top: 20px;
-    right: 12px;
-}
-#close  {
-    display: block;
-    background: url(../assets/button2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 50px;
-    height: 50px;
-    border: none;
-    position: absolute;
-    top: 20px;
-    right: 12px;
-}
-/* スマホ時はメニューを非表示 */
-#navi {
-    display: none;
-}
-}
-    
-/*メイン画像
--------------------------------------*/
-.mainimg img {
-    width: 100vw;
-}
-
-/*メインコンテンツ
--------------------------------------*/
 main {
     margin: 5rem 1rem;
 }
 section {
 	margin: 5rem 0;
-	padding: 3rem 0;
-}
-.gray-back {
-	background-color: var(--back-color);
 }
 
-/*キャッチコピー
--------------------------------------*/
 .catch {
     text-align: left;
     p {
@@ -538,23 +102,11 @@ section {
     padding-bottom: 3rem;font-weight: 600;
 }
 
-.under {
-    border-bottom: 0.4rem solid var(--base-color);
-    padding:0 1rem 1rem 1rem;
-}
 .center {
 	text-align: center;
 	margin-bottom: 4rem;
 }
 
-/*申し込みの流れ
--------------------------------------*/
-.flow.row {
-	margin-bottom: 3rem;
-}
-
-/*フッター
--------------------------------------*/
 footer {
     background-color: var(--back-color); 
     padding: 5rem 0;
@@ -563,35 +115,6 @@ footer h4 {
     border-bottom: 3px solid var(--border-color);
 }
 
-/*お問い合わせ
--------------------------------------*/
-.contact-box {
-	border: 1px solid var(--border-color);
-	text-align: center;
-	padding: 2rem 0;
-}
-.table {
-	margin: 4rem 0;
-}
-.table th {
-	width: 250px;
-}
-
-/*コピーライト
--------------------------------------*/
-.copyright {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: var(--base-color);
-}
-.copyright a {
-    color: var(--white-color);
-    text-decoration: none;
-	display: inline;
-}
-
-/*ページトップへ戻るボタン
--------------------------------------*/
 #pagetop {
     position: fixed;
     bottom: 15px;
@@ -607,24 +130,4 @@ footer h4 {
 }
 #pagetop a:hover {
     background-color: var(--link-color);
-}
-
-/* 幅768px以下の表示
--------------------------------------*/
-@media screen and (max-width: 768px){
-	
-/*ヘッダー
--------------------------------------*/
-.header-box {
-	display: none;
-}	
-/*お問い合わせ
--------------------------------------*/
-.table th {
-	width: 100%;
-	display: block;
-}	
-.table td {
-	display: block;
-}
 }
